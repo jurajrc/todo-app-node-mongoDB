@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // connect to mongoose  // origo text // mongodb+srv://Juraj-rc:<password>@cluster0.w5bgz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-mongoose.connect("mongodb+srv://Juraj-rc:65F0VKpiNX6chgEd@cluster0.w5bgz.mongodb.net/noteDB");
+mongoose.connect(`mongodb+srv://Juraj-rc:65F0VKpiNX6chgEd@cluster0.w5bgz.mongodb.net/noteDB`);
 
 // require route
 app.use("/", require("./routes/noteRoute"));
